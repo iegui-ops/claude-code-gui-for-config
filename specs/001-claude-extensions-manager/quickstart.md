@@ -3,15 +3,15 @@
 ## Prerequisites
 
 - Claude Code 2.1.299+ (`claude --version`)
-- Repo at `/home/xir/src/Ivan/gui-claude` (the repo root is the mod)
+- Repo at `/home/xir/src/Ivan/claude-code-gui-for-config` (the repo root is the mod)
 - For a safe first run, use a throwaway store root (e.g. `~/tmp/ext-store` with a copy of one skill) before pointing it at `~/src/Ivan`.
 
 ## Static checks
 
 ```bash
-claude plugin validate /home/xir/src/Ivan/gui-claude
-tsc -p /home/xir/src/Ivan/gui-claude
-claude plugin test /home/xir/src/Ivan/gui-claude
+claude plugin validate /home/xir/src/Ivan/claude-code-gui-for-config
+tsc -p /home/xir/src/Ivan/claude-code-gui-for-config
+claude plugin test /home/xir/src/Ivan/claude-code-gui-for-config
 ```
 
 Expected: no errors; `inventory.test.ts` and `import.test.ts` pass.
@@ -19,7 +19,7 @@ Expected: no errors; `inventory.test.ts` and `import.test.ts` pass.
 ## Run
 
 ```bash
-cd /home/xir/src/Ivan/gui-claude && claude --plugin-dir /home/xir/src/Ivan/gui-claude
+cd /home/xir/src/Ivan/claude-code-gui-for-config && claude --plugin-dir /home/xir/src/Ivan/claude-code-gui-for-config
 ```
 
 Type `/ext`.
